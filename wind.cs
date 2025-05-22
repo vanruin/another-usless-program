@@ -8,7 +8,7 @@ class Program
     {
         Console.WriteLine("Starting to spawn windows...");
 
-        for (int i = 0; i < 10; i++) // Adjust number for safety
+        for (int i = 0; i < 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999; i++) //For safety purposes <3
         {
             Thread t = new Thread(() =>
             {
@@ -16,7 +16,7 @@ class Program
             });
             t.SetApartmentState(ApartmentState.STA);
             t.Start();
-            Thread.Sleep(500); // Delay to avoid overwhelming system
+            Thread.Sleep(0); 
         }
 
         Console.WriteLine("Press any key to exit...");
